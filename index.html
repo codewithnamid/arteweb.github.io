@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="src/css/style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;400;600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GOOGLE ICONS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <title>UiVerse</title>
+  </head>
+  <body>
+    <div class="nav_bar">
+      <div class="logo">
+        <img src="src/images/logo-OR7QQX33.png" alt="" />
+      </div>
+      <ul>
+        <li>
+          <button class="toggle_btn">
+            <span class="material-icons-outlined"> settings </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <!-- CATEGORIES -->
+    <div class="menu_list">
+      <ul>
+        <li class="active" data-filter="all">All</li>
+        <li data-filter="button">Buttons</li>
+        <li data-filter="checkbox">CheckBoxes</li>
+        <li data-filter="toggle">Toggle Switches</li>
+        <li data-filter="card">Cards</li>
+        <li data-filter="loader">Loaders</li>
+        <li data-filter="input">Inputs</li>
+        <li data-filter="radio">Radio</li>
+        <li data-filter="radiobutton">Radio Buttons</li>
+        <li data-filter="form">Forms</li>
+        <li>
+          <span class="material-icons-outlined"> bookmark_border </span> My
+          favorites
+        </li>
+      </ul>
+    </div>
+
+    <!-- CARDS CONTAINER -->
+    <div class="card_container"></div>
+
+    <div class="sorryMsg">
+      <span>😟</span>
+      <p>We are Sorry!</p>
+    </div>
+
+    <div class="overlay">
+      <div class="copycode_container">
+        <button class="htmlbtn">
+          <img src="src/images/html.png" alt="HTML" />Copy HTML
+        </button>
+        <button class="cssbtn">
+          <img src="src/images/css.png" alt="CSS" />Copy CSS
+        </button>
+      </div>
+    </div>
+    <!-- JS LINK -->
+    <script src="src/js/cards.js" type="module"></script>
+    <script src="src/js/main.js" type="module"></script>
+  </body>
+</html>
