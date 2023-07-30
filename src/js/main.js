@@ -1,5 +1,13 @@
 const menuBtn = document.querySelector('.toggle_btn');
 const categoryBtn = document.querySelector('.category_container');
+const clsBtn = document.querySelector('.close_popup');
+const startPage = document.querySelector('.starter_page');
+document.body.classList.add('popup_active');
+clsBtn.addEventListener('click', () => {
+    startPage.classList.add('active');
+    document.body.classList.remove('popup_active');
+});
+
 import { cards } from "./cards.js";
 menuBtn.addEventListener('click', () => {
     categoryBtn.classList.toggle('active');
